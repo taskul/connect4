@@ -240,12 +240,25 @@
   .game-buttons-light {
     position: relative;
     margin-left: 1px;
-    width: 30px;
-    height: 30px;
+    width: 90%;
+    height: 70%;
   }
   #board td {
     width: 40px;
     height: 40px;
-    border-spacing: 20px;
+    border-spacing: 0px;
+  }
+  #main-display {
+    width: 130px;
+    margin: 15px 0px 0px 125px;
+  }
+  #main-display-text {
+    margin: 0px 0px 0px 10px;
+  }
+  #start-button-frame {
+    margin-left: 260px;
+  }
+  #player2 {
+    margin: 0px 0px 0px 200px;
   }
 }
