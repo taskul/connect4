@@ -249,8 +249,8 @@
     height: 20px;
   }
   #board td {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-spacing: 0px;
   }
   #main-display {
