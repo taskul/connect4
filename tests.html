@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 tests</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="connect4.css" rel="stylesheet">
+    <!-- Jasmine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/jasmine.css" />
+</head>
+
+<body>
+
+    <div id="game" style="margin-left: 27%;margin-top: 15%;">
+        <div id="gameHeader">
+          <div id="current-player">
+            <p id="current-player-label">Current Player:</p>
+            <div id="current-player-display">
+              <p id="player"></p>
+            </div>
+          </div>
+          <div id="main-display">
+            <p id="main-display-text"></p>
+          </div>
+          <div id="start-button-frame">
+            <button id="start-button">
+              <p id="start-button-text">Start/ Reset</p>
+            </button>
+          </div>
+          <div id="directions">
+            <p id="player1">Player 1 color</p>
+            <p id="player2">Player 2 color</p>
+          </div>
+        </div>
+    
+        <table id="board"></table>
+      </div>
+
+    
+    <script src="connect4.js"></script>
+    <!-- Jasmine testing -->
+    <script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/jasmine.js"></script>
+    <script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/jasmine-html.js"></script>
+    <script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/boot0.js"></script>
+    <script src="https://unpkg.com/jasmine-core@4.1.0/lib/jasmine-core/boot1.js"></script>
+
+    <!-- connect 4 testing file -->
+
+    <script src="connect4.test.js"></script>
+
+</body>
+
+</html>

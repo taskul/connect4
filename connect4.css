@@ -1,0 +1,236 @@
+/* game board table */
+#game {
+  position: absolute;
+  left: 35%;
+  top: 10%;
+  width: 400px;
+  padding: 20px;
+  background: #6E93DD;
+  box-shadow: inset 6px 6px 3px rgba(151, 186, 255, 0.8);
+  filter: drop-shadow(5px 5px 6px rgba(0, 0, 0, 0.25));
+  border-radius: 30px;
+}
+
+#board {
+  border-spacing: 5px;
+}
+
+.game-buttons {
+  position: relative;
+  margin-top: 1.5px;
+  margin-left: 1.5px;
+  width: 95%;
+  height: 95%;
+  border: none;
+  border-radius: 50%;
+  background: #6E93DD;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(89, 51, 57, 0.5), inset 2px 2px 2px #A0B7E4;
+}
+
+.game-buttons:active {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(89, 51, 57, 0.5), inset 2px 2px 2px rgba(89, 118, 175, 0.5);
+}
+
+.game-buttons-light {
+  position: relative;
+  margin-left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: #D9D9D9;
+  box-shadow: 1px 1px 2px #A0B7E4, inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+/* Lights on a game buttons */
+.p1 {
+  background-color: gold;
+}
+
+.p2 {
+  background-color: #DB697D;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border-spacing: 30px;
+  border-radius: 50%;
+  background: #4C638F;
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 1.5px 1.5px 2px rgba(138, 169, 231, 0.8), inset 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+#current-player {
+  position: absolute;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+#player {
+  position: relative;
+  width: 90px;
+  margin: 5px auto 0px 5px;
+  padding-top: 10px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.7rem;
+  font-weight: 200;
+  color: black;
+}
+
+#current-player-label {
+  width: 150px;
+  padding: 0px;
+  margin: 0px 0px 5px 0px;
+  color: aliceblue;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 0.8rem;
+}
+
+#directions {
+  margin: 10px;
+  background-color: rgba(48, 48, 102, 0.516);
+  border-radius: 10px;
+}
+
+#player1 {
+  position: absolute;
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  color: gold;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 0.8rem;
+}
+
+#player2 {
+  position: relative;
+  display: inline-block;
+  margin: 0px 0px 0px 275px;
+  color: #DB697D;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 0.8rem;
+}
+
+#current-player-display {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  background: #6C6F6C;
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(138, 169, 231, 0.8), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+#main-display {
+  position: absolute;
+  display: inline-block;
+  width: 150px;
+  height: 70px;
+  margin: 15px 0px 0px 145px;
+  border-radius: 30px;
+  text-align: center;
+  background: #6C6F6C;
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(138, 169, 231, 0.8), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#main-display-text {
+  position: relative;
+  width: 70px;
+  margin: 0px 0px 0px 20px;
+  padding-top: 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  font-weight: 300;
+  color: black;
+}
+
+#start-button-frame {
+  position: relative;
+  display: inline-block;
+  margin-left: 320px;
+  margin-top: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #9F4E5C;
+  box-shadow: 2px 2px 2px #8AA9E7, inset 3px 3px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+#start-button {
+  position: absolute;
+  margin-top: 1.5px;
+  margin-left: 1.5px;
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  background: #DB697D;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(89, 51, 57, 0.5), inset 2px 2px 2px #EE9CAA;
+  text-align: center;
+}
+
+#start-button:hover {
+  background: #FF8DA1;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(89, 51, 57, 0.5), inset 2px 2px 2px #FCD2D9;
+}
+
+#start-button:active {
+  background: #C26071;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(89, 51, 57, 0.5), inset 2px 2px 2px rgba(238, 156, 170, 0.5);
+}
+
+#start-button-text {
+  color: aliceblue;
+  margin-top: 15px;
+  font-family: 'Rubik Dirt', cursive;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  z-index: 1;
+}
+
+.board-piece-light {
+  position: relative;
+  width: 97%;
+  height: 97%;
+  margin-left: 1px;
+  border-radius: 50%;
+  background: #C8ADB2;
+  box-shadow: -2px -2px 5px rgba(89, 51, 57, 0.5), inset 1px 1px 2px rgba(0, 0, 0, 0.5), inset 2px 2px 2px rgba(238, 219, 223, 0.5);
+}
+
+.player-one-piece {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FFE70D;
+  box-shadow: 2px 2px 3px rgba(255, 231, 13, 0.25), -2px -2px 5px rgba(255, 231, 13, 0.5), inset 2px 2px 2px #FFFAC9;
+}
+
+.player-two-piece {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FF274D;
+  box-shadow: 3px 3px 4px rgba(255, 39, 77, 0.25), -2px -2px 5px rgba(255, 39, 77, 0.5), inset 2px 2px 2px rgba(238, 156, 170, 0.5);
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  #game {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+  }
+}
