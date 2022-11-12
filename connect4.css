@@ -235,7 +235,7 @@
     position: relative;
     left: 0;
     top: 5%;
-    width: 70%;
+    width: 90%;
     height: 80%;
   }
   .game-buttons {
@@ -245,8 +245,8 @@
   .game-buttons-light {
     position: relative;
     margin-left: 0px;
-    width: 90%;
-    height: 70%;
+    width: 14px;
+    height: 14px;
   }
   #board td {
     width: 30px;
