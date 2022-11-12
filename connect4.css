@@ -15,6 +15,17 @@
   border-spacing: 5px;
 }
 
+#board td {
+  width: 50px;
+  height: 50px;
+  border-spacing: 30px;
+  border-radius: 50%;
+  background: #4C638F;
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 1.5px 1.5px 2px rgba(138, 169, 231, 0.8), inset 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Button used for playing the game */
+
 .game-buttons {
   position: relative;
   margin-top: 1.5px;
@@ -52,15 +63,7 @@
   background-color: #DB697D;
 }
 
-#board td {
-  width: 50px;
-  height: 50px;
-  border-spacing: 30px;
-  border-radius: 50%;
-  background: #4C638F;
-  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 1.5px 1.5px 2px rgba(138, 169, 231, 0.8), inset 3px 3px 2px rgba(0, 0, 0, 0.2);
-}
-
+/* Label and display that show current player */
 
 #current-player {
   position: absolute;
@@ -89,30 +92,6 @@
   font-size: 0.8rem;
 }
 
-#directions {
-  margin: 10px;
-  background-color: rgba(48, 48, 102, 0.516);
-  border-radius: 10px;
-}
-
-#player1 {
-  position: absolute;
-  display: inline-block;
-  margin: 0px 0px 0px 10px;
-  color: gold;
-  font-family: 'Rubik Dirt', cursive;
-  font-size: 0.8rem;
-}
-
-#player2 {
-  position: relative;
-  display: inline-block;
-  margin: 0px 0px 0px 275px;
-  color: #DB697D;
-  font-family: 'Rubik Dirt', cursive;
-  font-size: 0.8rem;
-}
-
 #current-player-display {
   position: relative;
   display: inline-block;
@@ -124,6 +103,8 @@
   box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.25), 2px 2px 4px rgba(138, 169, 231, 0.8), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
+
+/* Main Center display */
 
 #main-display {
   position: absolute;
@@ -148,6 +129,8 @@
   color: black;
 }
 
+/* Start Button */
+
 #start-button-frame {
   position: relative;
   display: inline-block;
@@ -169,7 +152,7 @@
   height: 95%;
   border-radius: 50%;
   background: #DB697D;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(89, 51, 57, 0.5), inset 2px 2px 2px #EE9CAA;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5), -2px -2px 3px rgba(89, 51, 57, 0.5), inset 2px 2px 2px #EE9CAA;
   text-align: center;
 }
 
@@ -189,15 +172,33 @@
   font-family: 'Rubik Dirt', cursive;
 }
 
-/* pieces are div within game table cells: draw as colored circles */
+/* Game directions  */
 
-.piece {
-  /* TODO: make into circles */
-  margin: 5px;
-  width: 80%;
-  height: 80%;
-  z-index: 1;
+#directions {
+  margin: 10px;
+  background-color: rgba(48, 48, 102, 0.516);
+  border-radius: 10px;
 }
+
+#player1 {
+  position: absolute;
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  color: gold;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 0.8rem;
+}
+
+#player2 {
+  position: relative;
+  display: inline-block;
+  margin: 0px 0px 0px 275px;
+  color: #DB697D;
+  font-family: 'Rubik Dirt', cursive;
+  font-size: 0.8rem;
+}
+
+/* Game pieces lights */
 
 .board-piece-light {
   position: relative;
@@ -227,10 +228,24 @@
   box-shadow: 3px 3px 4px rgba(255, 39, 77, 0.25), -2px -2px 5px rgba(255, 39, 77, 0.5), inset 2px 2px 2px rgba(238, 156, 170, 0.5);
 }
 
+/* Responsive website */
+
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   #game {
     position: absolute;
-    left: 15%;
-    top: 10%;
+    left: 0;
+    top: 5%;
+    width: 100%;
+  }
+  .game-buttons-light {
+    position: relative;
+    margin-left: 1px;
+    width: 30px;
+    height: 30px;
+  }
+  #board td {
+    width: 40px;
+    height: 40px;
+    border-spacing: 20px;
   }
 }
