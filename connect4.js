@@ -204,11 +204,7 @@ function endGame(msg) {
 
 function handleClick(evt) {
   if (gameOver) return;
-  // check for draw
-  if (board.every(row => row.every(cell => cell !==null))) {
-        endGame('DRAW!!')
-        gameOver = True;
-    }
+
   // check to see if what is being clicked is a button
   if (evt.target.tagName === 'BUTTON') {
   // get x from ID of clicked cell
@@ -228,6 +224,13 @@ function handleClick(evt) {
       if (checkForWin()) {
         return endGame(`Player ${currPlayer} won!`);
       }
+
+        // check for draw
+      if (board.every(row => row.every(cell => cell !==null))) {
+        endGame('DRAW!!')
+        gameOver = True;
+      } 
+      
       // switch players
       if (currPlayer === 1) {
         currPlayer = 2;
