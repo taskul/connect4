@@ -138,14 +138,6 @@ function updatePlayerLights(player) {
         gameButton.classList.remove('p1')
       }
     }
-    if (player === null) {
-      if (gameButton.classList.contains('p1')) {
-        gameButton.classList.remove('p1')
-      }
-      if (gameButton.classList.contains('p2')) {
-        gameButton.classList.remove('p2')
-      }
-    }
   }
 }
 
